@@ -10,6 +10,16 @@
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			crossorigin="anonymous"
 		/>
+		<style>
+			.card {
+				max-width: 600px;
+				margin: auto;
+			}
+			.card-img-top {
+				max-height: 255px px;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<main class="container">
@@ -25,47 +35,30 @@
 
 				<ul class="nav nav-pills">
 					<li class="nav-item">
-						<a href="#" class="nav-link active" aria-current="page">Home</a>
+						<a href="./index.html" class="nav-link" aria-current="page">Home</a>
 					</li>
 					<li class="nav-item">
-						<a href="./about.html" class="nav-link">About</a>
+						<a href="./about.html" class="nav-link active">About</a>
 					</li>
 				</ul>
 			</header>
 
-			<h1>hello world</h1>
-
-			<form>
-				<div class="mb-3">
-					<label for="exampleInputEmail1" class="form-label"
-						>Email address</label
-					>
-					<input
-						type="email"
-						class="form-control"
-						id="exampleInputEmail1"
-						aria-describedby="emailHelp"
-					/>
-					<div id="emailHelp" class="form-text">
-						We'll never share your email with anyone else.
-					</div>
+			<h2 class="text-center">About page</h2>
+			<section class="card mx-auto">
+				<img
+					src="https://images.pexels.com/photos/20073934/pexels-photo-20073934/free-photo-of-a-bicycle-leaning-against-a-wall-next-to-a-wooden-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+					class="card-img-top"
+					alt="photo about"
+				/>
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">
+						Some quick example text to build on the card title and make up the
+						bulk of the card's content.
+					</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
 				</div>
-				<div class="mb-3">
-					<label for="exampleInputPassword1" class="form-label">Password</label>
-					<input
-						type="password"
-						class="form-control"
-						id="exampleInputPassword1"
-					/>
-				</div>
-				<div class="mb-3 form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-					<label class="form-check-label" for="exampleCheck1"
-						>Check me out</label
-					>
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
+			</section>
 		</main>
 
 		<script
