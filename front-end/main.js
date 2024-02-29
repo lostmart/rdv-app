@@ -9,11 +9,9 @@ function initMap() {
     });
 
     const teammembers = [
-        {label: "정민", name: "Sydney", lat: -33.88048572951443  , lng: 151.1931490741418  }, 
-        {label: "미영", name: "France", lat: 48.87635330855851   , lng: 2.3435917310731167  },        
-        {label: "나리", name: "Melbourne", lat: -37.81467389117771   , lng: 145.02000657985997  },
-        {label: "동진", name: "Perth", lat: -31.942164290956356   , lng: 115.87872855699194  }
-    ];
+        {label: "Mart", name: "France", lat: 48.87635330855851   , lng: 2.1535917310731160  },
+        {label: "Miyoung", name: "France", lat: 48.74635330855851   , lng: 1.7135917310731167  }       
+            ];
 
     const bounds = new google.maps.LatLngBounds();
     const infoWindow = new google.maps.InfoWindow();
@@ -55,7 +53,7 @@ function initMap() {
 function getTimezone(lat, lng) {
     return new Promise((resolve, reject) => {
         const timestamp = Math.floor(Date.now() / 1000);
-        const apiUrl = `https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=${timestamp}&key=AIzaSyAreQKWwntyiu5a-GTvi59_R5T5__oLUj4`;
+        const apiUrl = `https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=${timestamp}&key=myAPIkey`;
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
